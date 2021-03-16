@@ -44,8 +44,8 @@ if (isset($_GET['s']))
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <link rel="stylesheet" href="assets/css/style.css">
     <title><?php if($fileExists) echo 'P5 Sketch - '.$sketchname; else echo 'P5 Sketches'; ?></title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.3.0/p5.min.js" integrity="sha512-tGZFF1kxT/c9C+kv77mKkZ9Ww1VyU8TMX6HLUSzbPrDLuptbiRFBfti8A33ip+BBIHYUsybuZD9OKLmIqdLmaQ==" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.3.0/addons/p5.sound.min.js" integrity="sha512-wM+t5MzLiNHl2fwT5rWSXr2JMeymTtixiw2lWyVk1JK/jDM4RBSFoH4J8LjucwlDdY6Mu84Kj0gPXp7rLGaDyA==" crossorigin="anonymous"></script>
@@ -74,7 +74,7 @@ if (isset($_GET['s']))
         <?php foreach(glob("sketches/*.js") as $sketch):
             $sketchname = basename($sketch, '.js');    
         ?>
-            <a href="<?php echo $baseUri.'?s='.$sketchname ?>"><p><?php echo $sketchname.'.js' ?></p><img src="p5-logo.jpeg"></img></a>
+            <a href="<?php echo $baseUri.'?s='.$sketchname ?>"><p><?php echo $sketchname.'.js' ?></p></a>
         <?php endforeach; ?>
     </div>
     <?php endif ?>
