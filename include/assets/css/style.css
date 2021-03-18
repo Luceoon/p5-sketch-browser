@@ -23,6 +23,8 @@
 */
 
 @charset "UTF-8";
+@import "list.css";
+@import "sketch.css";
 
 html, body {
     height: 100%;
@@ -30,8 +32,7 @@ html, body {
 }
   
 body {
-    margin: 0;
-    display: flex;
+    margin: auto;
     justify-content: center;
     align-items: center;
 }
@@ -49,7 +50,7 @@ body {
     text-align: left;
     text-decoration: none;
     font-size: 27px;
-    background-color: rgb(243, 178, 0);
+    background-color: #00809B;
     color: white;
     padding: 8px 25px;
     margin: auto;
@@ -71,46 +72,6 @@ body {
     width: 33.33%;
     height: 100%;
     float: left;
-}
-
-#list {
-    width: 80%;
-    height: auto;
-    margin: auto;
-    margin-top: 70px;
-}
-
-#list a {
-    display: flex;
-    width: 440px;
-    height: 220px;
-    margin: 25px;
-    float: left;
-    background: url(../img/listitem_bg.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat:  no-repeat;
-    text-decoration: none;
-    border-radius: 20px;
-}
-
-#list a:hover {
-    background: url(../img/listitem_bg-hover.png);
-}
-
-#list a img  {
-    position: absolute;
-    border-radius: 20px;
-    height: 5%;
-    width: 5%;
-    padding: 10px;
-}
-
-#list a p {
-    margin: auto;
-    color: rgb(243, 178, 0);
-    font-size: 37px;
-    padding-top: 20px;
 }
 
 .hide {

@@ -1,0 +1,28 @@
+#canvas {
+    width: 66.66%;
+    height: calc(100vh - 70px);
+    float: left;
+    display: flex;
+}
+
+canvas {
+    margin: auto;
+}
+
+#code {
+    width: 33.33%;
+    height: calc(100vh - 70px);
+    float: right;
+    margin-top: 70px;
+}
+
+pre {
+    height: 100%;
+    margin: 0;
+}
+
+code {
+    height: 100%;
+    padding: 0 .5em !important;
+    overflow-y: scroll;
+}
